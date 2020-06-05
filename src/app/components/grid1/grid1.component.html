@@ -1,0 +1,24 @@
+<table class="table">
+     <tr >
+         <td>
+             Title
+         </td>
+         <td>
+            First Name
+        </td>
+        <td>
+            Last Name
+        </td>
+     </tr>
+        <tr *ngFor="let item of data.results">
+            <td>
+                {{ item.name.title }}
+            </td>
+            <td>
+                {{ item.name.first }}
+           </td>
+           <td>
+            {{ item.name.last }}
+           </td>
+        </tr>
+      </table> 
